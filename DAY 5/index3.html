@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+</head>
+<body>
+    <script>
+        let unit =56 , total = 0;
+
+        if(unit>1 && unit<20){
+            total = unit * 1;
+            console.log(total);
+        }
+        else if(unit>21 && unit<50){
+            total = (20 * 1) + (unit - 20)*1.5;
+            console.log(total)
+        }
+        else if(unit>51 && unit<100){
+            total = (20 * 1) + (30 * 1.5) + (unit - 50) * 2;
+            console.log(total);
+        }
+        else if(unit>101 && unit<150){
+            total = (20 * 1) + (30 * 1.5) +  (50 * 2) + (unit - 100) * 2.5;
+             console.log(total);
+        }
+        else if(unit>150){
+            total = (20 * 1) + (30 * 1.5) + (50 * 2) + (unit - 150) * 5;
+            console.log(total);
+        }
+        
+    </script>
+</body>
+</html>
