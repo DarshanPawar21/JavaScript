@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Q26-WAP to find sum of digits of a number using while loop, do…while loop, for loop.");
+        console.log("While Loop");
+        let num = 123;
+        let i = 0;
+        let sum =0;
+        while(num > 0){
+          
+           ld = num % 10;//
+           sum = sum + ld;
+            num = Math.floor(num/10);
+            
+        }
+        console.log(sum);
+        
+        console.log("For Loop");
+        // // let num1 = 123;
+        // // let l1 = 0;
+        // let sum1 = 0;
+        // for(num1=123;num1 > 0;){
+        //     ld1 = num1 % 10;
+        //     sum1 = sum1 + ld1;
+        //     num1 = Math.floor(num1); 
+        // }
+        // console.log(sum1);
+
+        console.log("Do While Loop");
+        let num1 = 123;
+        let l1= 0;
+        let  sum1 = 0;
+        do{
+            l1 = num % 10;//
+           sum1 = sum1 + l1;
+            num1 = Math.floor(num1/10);
+        }while(num1>0);
+        console.log(sum);
+
+        console.log("Q27-WAP to check whether a number is palindrome or not using while loop, do…while loop, for loop.");
+         console.log("While Loop");
+        let nu = 121;
+        let rev = 0;
+        let tem = 0;
+        tem == nu;
+    while(nu>0){
+       let ld = nu % 10;
+        rev = (rev * 10) + ld;
+        nu = Math.floor(nu/10);
+    }
+        if(nu == tem){
+            console.log("The Number is Palindrome")
+        }else{
+            console.log("The Number is not Palindrome")
+        }
+
+        console.log("Q28-WAP to check whether a number is prime or not using while loop, do…while loop, for loop.");
+            let i1 =1 ;
+       let n =3;
+       let cou =0;
+
+       while(i1<=n){
+        if (n % i1 == 0) {
+                cou++;
+            } else {
+                cou = cou + 0;
+            }
+
+                  i1++;
+                 }
+        if (n == 0 && n == 1) {
+           console.log("The Number is not prime");
+        } else if (cou > 2) {
+            console.log("The Number is not prime");
+
+        } else {
+            console.log("The Number is Prime Number")
+        }
+
+  console.log("For loop")
+        
+        let count1 = 0;
+        let n3 = 31;
+        for (let i3 = 1; i3 <= n3; i3++) {
+
+            if (n3 % i3 == 0) {
+                count1++;
+            } else {
+                count1 = count1 + 0;
+            }
+        }
+        if (n3 == 0 && n3 == 1) {
+            console.log("The Number is not prime");
+        } else if (count1 > 2) {
+            console.log("The Number is not prime");
+
+        } else {
+            console.log("The Number is Prime Number")
+        }
+
+    console.log("Do While Loop")
+       let n2 =22;
+    let i2 =1;
+    let count = 0;
+   do{
+if(n2%i2==0){
+    count++;
+}else{
+    count = count +0;
+}
+i2++;
+   }while(i2<=n2);
+
+   if(n2==0 && n2==1){
+    console.log("The Number is not a Prime Number");
+
+   }else if(count>2){
+            console.log("The Number is not a Prime Number");
+   }else{
+       console.log("The Number is a Prime Number");
+
+   }
+
+   console.log("Q29-WAP to check whether a number is Armstrong number or not using while loop, do…while loop, for loop.");
+       console.log("While Loop")
+
+        let j = 1235;
+        let no1 = j;
+        let total = 0;
+        let k = 0;
+
+        while (no1 > 0) {
+            r = no1 % 10;
+            total = total +(r * r * r);
+            no1 = Math.floor(no1 / 10);
+        }
+
+        if (total == k) {
+            console.log("Number is Armstrong.");
+        }
+        else {
+            console.log("Number is Not Armstrong.");
+        }
+
+        console.log("Do while Loop");
+
+        let j1 = 123;
+        let no2 = j1;
+        let total1 = 0;
+        let k1 = 0;
+
+        do {
+            r = no2 % 10;
+            total1 = total1 + (r * r * r);
+            no2 = Math.floor(no2 / 10);
+        } while (no2 > 0);
+
+        if (total1 === j1) {
+            console.log("Number is Armstrong.");
+        }
+        else {
+            console.log("Number is Not Armstrong.");
+        }
+
+        console.log("Q30-WAP to check whether a number is Magic Number or not using while loop, do…while loop, for loop.");
+        console.log("")
+    </script>
+</body>
+</html>

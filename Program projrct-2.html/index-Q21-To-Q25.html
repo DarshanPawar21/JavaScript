@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         console.log("Q21 - WAP to print logical sequence 1,3 ,5,7,9 using while loop, do…while loop, for loop.");
+    let num1 = 1;
+    let num2 = 20;
+    while(num1<=10){
+        if(num1 % 2 == 1){
+            num1 = num1 + 1;
+        num1++;
+        console.log(num1 )
+         }
+        // else{
+        //     num1 = num1 + 1;
+        // num1++;
+        // console.log(num1)
+        // }
+    }
+    console.log("For While Loop");
+    for(no1=1;no1<=10;no1++){
+         if(no1 % 2 == 0){
+            no1 = no1 + 1;
+        console.log(no1 );
+        }
+        else{
+        //     no1 = no1 + 1;
+        // console.log(no1 )
+        }
+    }
+    console.log("Do while Loop");
+    let num11 = 1;
+    
+    do{
+        if(num11 % 2 == 1){
+            num11 = num11 + 1;
+        num11++;
+        console.log(num11 )
+         }
+         else{
+
+         }
+    }while(num11<=10);
+    
+    console.log("Q22-Wap to print logical sequence 1,11,111,1111,using while loop, do…while loop, for loop.");
+    console.log("While Loop");
+    let o = 0;
+    let j = 1;
+    while(j<8){
+        o = o * 10 + 1;
+        console.log(o);
+        j++;
+    }
+    console.log("For Loop");
+     let o1 = 0;
+    let j1 = 1;
+    for(j=1;j<8;j++){
+        o1 = o1 * 10 + 1;
+        console.log(o1);
+    }
+    console.log("Do While Loop");
+    let num = 0;
+    let nu1 = 1;
+    do{
+         num = num * 10 + 1;
+        console.log(num);
+        nu1++;
+    }while(nu1<8);
+    
+    console.log("Q23-WAP to print Fibonacci sequence using while loop, do…while loop, for loop.");
+    let y = 0;
+    let r = 1;
+    let f = 1;
+    let s;
+    
+    console.log("While Loop ")
+    console.log(y);
+    console.log(r);
+    while(f<=10){
+        s =  y + r;
+       console.log(s );
+       y = r;
+       r = s;
+       f++; 
+    }
+    
+    console.log("For While Loop");
+    let y1 = 0;
+    let r1 = 1;
+    let f1 = 1;
+    let s1;
+    for(f1=1;f1<10;f1++){
+       s1 =  y1 + r1;
+       console.log(s1 );
+       y1 = r1;
+       r1 = s1;
+    }
+
+    console.log("Do While Loop");
+    let y2 = 0;
+    let r2 = 1;
+    let f2 = 1;
+    let s2;
+    do{
+        s2 =  y2 + r2;
+       console.log(s2 );
+       y2 = r2;
+       r2 = s2;
+       f2++;
+    }while(f2<10);
+    
+    console.log("Q24-WAP to reverse a number using while loop, do…while loop, for loop.");
+    let nu = 123;
+    let rev = 0;
+    console.log("While Loop");
+    while(nu>0){
+       let ld = nu % 10;
+        rev = (rev * 10) + ld;
+        nu = Math.floor(nu/10);
+    }
+    console.log(rev);
+    
+    console.log("For Loop");
+    let no = 123;
+    let reverse = 0;
+   for(no=122;no>0;no){
+    let ld = no % 10;
+    reverse = reverse * 10 + ld;
+    no = Math.floor(no/10);
+   }
+    console.log(reverse);
+
+    console.log("Do while Loop");
+    let no11 = 122;
+    let reverse1 = 0;
+    do{
+    let ld = no11 % 10;
+    reverse1 = reverse1 * 10 + ld;
+    no11 = Math.floor(no11/10);
+
+    }while(no11>0);
+    console.log(reverse1)
+
+    console.log("Q25-WAP to count digits of a number using while loop, do…while loop, for loop.");
+       console.log("While Loop");
+        let k = 1;
+        di = 1452;
+        while(k<=di){
+            di = di / 10;
+            k++; 
+            // console.log(k)
+        }
+        console.log(k);
+
+        console.log("For Loop");
+        let l;
+        let digits = 1234;
+        for(l=1;l<=digits;l++){
+            digits = digits / 10;
+        }
+        console.log(l);
+        console.log("Do while Loop");
+        let l1 = 1;
+        let de = 1234;
+        do{
+            de = de / 10;
+            l1++;
+        }while(l1<=de);
+        console.log(l1);
+        
+    </script>
+</body>
+</html>

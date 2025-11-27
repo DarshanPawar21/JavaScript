@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-6 To Q-7</title>
+</head>
+<body>
+    <script>
+        console.log("Q6 = WAP to find maximum between two numbers.")
+        
+        let number1 = 10;
+        let number2 = 20;
+        
+        if(number1>number2){
+            console.log("The number 1 is maxium !");
+        }else{
+        console.log("The number 2 is maximum !");
+        }
+
+        console.log("Q7 = WAP to find minimum between four numbers using nested if-else.");
+        const num11 = 100, num2 = 20 , num3 = 200 , num4 = 50;
+
+        // num1 num2 num3 num4
+
+        if(num11<num2){
+            // num1 num3 num4
+            if(num11<num3){
+                if(num11<num4){
+                    console.log("Num1 is min");
+                }
+                else{
+                    console.log("Num4 is min");
+                }
+            }
+            else{
+                console.log("Num3 is min");
+            }
+        }
+        else{
+            // num2 num3 num4
+            if(num2<num3){
+                if(num2<num4){
+                    console.log("Num2 is min");
+                }
+                else{
+                    console.log("Num4 is min");
+                }
+            }   
+            else{
+                if(num3<num4){
+                    console.log("Num3 is min");
+                }
+                else{
+                  if(num11==num2){
+                    if(num3==num4){
+                        console.log("All are qual !")
+                    }
+                    else{
+                        console.log("Num4 is min");
+                    }
+                  }
+                  else{
+
+                  }
+                }
+            }
+        }
+        console.log("Q8 = WAP to find maximum between three numbers using ladder if-else.");
+         const no1 = 10, no2 = 20 , no3 = 30 , no4 = 40;
+
+        if(no1>no2 && no1>no3){
+            console.log("No1 is max")
+        }
+        else if(no2>no1 && no2>no3){
+            console.log("No2 is max")
+        }
+         else if(no3>no1 && no3>no2){
+            console.log("No3 is max")
+        } 
+
+        console.log("Q9 = WAP to calculate electricity bill based on unit slabs.");
+         let unit =170 , total = 0;
+
+        if(unit>1 && unit<20){
+            total = unit * 1;
+            console.log(total);
+        }
+        else if(unit>21 && unit<50){
+            total = (20 * 1) + (unit - 20)*1.5;
+            console.log(total)
+        }
+        else if(unit>=51 && unit<=100){
+            total = (20 * 1) + (30 * 1.5) + (unit - 50) * 2;
+            console.log(total);
+        }
+        else if(unit>101 && unit<150){
+            total = (20 * 1) + (30 * 1.5) +  (50 * 2) + (unit - 100) * 2.5;
+             console.log(total);
+        }
+        else if(unit>150){
+            total = (20 * 1) + (30 * 1.5) + (50 * 2) + (50 * 2.5) + (unit - 150)*5;
+            console.log(total);
+        }
+        
+
+        console.log("Q10 = WAP to calculate student grade using percentage of 5 subjects.");
+         let guj = 100 , hindi = 100 , ss = 100 , english = 100 ,scince = 60 , totale = 0 , percentage;
+
+        totale = guj+hindi+ss+english+scince;
+        percentage = totale/5
+
+
+        if(percentage >= 95 || percentage <= 100){
+            console.log(percentage,"A+");
+        }
+        else if(percentage >= 95 || percentage <= 90){
+            console.log(percentage,"A");
+        }
+        else if(percentage >= 89 || percentage <= 85){
+            console.log(percentage,"B+");
+        }
+        else if(percentage >= 86 || percentage <= 80){
+            console.log(percentage,"B");
+        }
+        else if(percentage > 79 || percentage < 70){
+            console.log(percentage,"C+");
+        }
+        else if(percentage > 69 || percentage < 45){
+            console.log(percentage,"C");
+        }
+        else if(percentage > 45 || percentage < 0){
+            console.log(percentage,"Are You Failed");
+        }
+    </script>
+</body>
+</html>
