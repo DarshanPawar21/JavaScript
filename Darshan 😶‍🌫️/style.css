@@ -1,0 +1,24 @@
+body{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://wallroom.io/img/1920x1080/bg-db55826.jpg");
+
+}
+.sec{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-info{
+    width: 30%;
+    /* background: rebeccapurple; */
+}
+.edit{
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
