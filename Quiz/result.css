@@ -1,0 +1,57 @@
+/* result.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Bright blue gradient background */
+    color: #fff;
+}
+
+.result-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #ffd700; /* Gold color for success */
+}
+
+.message {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #e0ffe0; /* Light green for success message */
+}
+
+.btn-restart {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #28a745; /* Green success button */
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-restart:hover {
+    background: #218838;
+    transform: scale(1.05);
+}

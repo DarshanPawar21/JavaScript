@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Full background sky */
+.con {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 80, 0.6)),
+        url("https://images.unsplash.com/photo-1503264116251-35a269479413");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+
+/* Container box */
+.container {
+    max-width: 700px;
+}
+
+/* Timer */
+#timer_text {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 30px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+}
+
+/* Question box */
+.list-group {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Question */
+#Question {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* Options */
+.list-group-item {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    font-size: 17px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.list-group-item:hover {
+    background: #e3f2fd;
+    transform: translateX(5px);
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    accent-color: #0072ff;
+    transform: scale(1.2);
+}
+
+/* Next button */
+#next_btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    transition: 0.3s;
+}
+
+#next_btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 114, 255, 0.6);
+}
+    
