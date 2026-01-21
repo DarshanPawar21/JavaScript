@@ -1,0 +1,134 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f4f4f4);
+    padding: 20px;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    max-width: 750px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 123, 255, 0.4);
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.filters select {
+    flex: 1;
+}
+
+/* Task Card */
+.task {
+    background: #f9f9f9;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Priority Colors */
+.task.low {
+    border-left-color: #28a745;
+}
+
+.task.medium {
+    border-left-color: #ffc107;
+}
+
+.task.high {
+    border-left-color: #dc3545;
+}
+
+/* Task Actions */
+.task-actions {
+    margin-top: 10px;
+}
+
+.task-actions button {
+    width: auto;
+    padding: 6px 12px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.task-actions .edit {
+    background: #17a2b8;
+}
+
+.task-actions .delete {
+    background: #dc3545;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .filters {
+        flex-direction: column;
+    }
+}
