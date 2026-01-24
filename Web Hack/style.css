@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI';
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.calculator-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.main-content {
+    display: flex;
+    gap: 40px;
+}
+
+.inputs-section {
+   flex: 1;
+  }
+
+
+
+.input-group {
+   margin-bottom: 25px;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.value-box {
+    background: #e0f2f1;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.value-box .c1 {
+    border: none;
+    background: transparent;
+    width: 70px;
+    text-align: right;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.t1{
+    width: 100%;
+    accent-color: #00bfa5;
+    
+}
+
+.results-display { margin-top: 30px;
+color: silver;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
